@@ -1,0 +1,146 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.backLink {
+  color: #a0a0ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.productCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.imageSection {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.infoSection {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e63946;
+  margin: 0;
+}
+
+.descriptionBlock {
+  margin-top: 10px;
+}
+
+.descTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.meta {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.metaItem {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .productCard {
+    grid-template-columns: 1fr;
+  }
+
+  .imageSection {
+    min-height: 250px;
+  }
+
+  .infoSection {
+    padding: 24px;
+  }
+
+  .productName {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+}
